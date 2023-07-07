@@ -1,5 +1,6 @@
 helm:
   chart: "oci://ghcr.io/fleetrepoci/guestbook"
+  version: 0.1.0
 targetCustomizations:
 - name: dev
   helm:
