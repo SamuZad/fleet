@@ -1,10 +1,12 @@
 helm:
-  chart: "oci://ghcr.io/fleetrepoci/guestbook"
-  version: 0.1.0
+  chart: "oci://registry-1.docker.io/bitnamicharts/nginx"
+  version: "15.1.0"
 targetCustomizations:
 - name: dev
   helm:
     values:
-      replication: false
+      replicaCount: 2
+      service:
+        type: ClusterIP
   clusterSelector: {}
     
