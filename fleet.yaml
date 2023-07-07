@@ -8,3 +8,5 @@ targetCustomizations:
       replicaCount: 2
       service:
         type: ClusterIP
+  clusterSelector: {}
+    
