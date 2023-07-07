@@ -1,9 +1,9 @@
-# helm:
-#   chart: "oci://ghcr.io/fleetrepoci/guestbook"
-# targetCustomizations:
-# - name: dev
-#   helm:
-#     values:
-#       replication: false
-#   clusterSelector: {}
+helm:
+  chart: "oci://ghcr.io/fleetrepoci/guestbook"
+targetCustomizations:
+- name: dev
+  helm:
+    values:
+      replication: false
+  clusterSelector: {}
     
