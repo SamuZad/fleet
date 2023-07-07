@@ -1,0 +1,10 @@
+namespace: fleet-mc-helm-external-example
+helm:
+  chart: oci://registry-1.docker.io/bitnamicharts/nginx
+targetCustomizations:
+- name: all
+  helm:
+    values:
+      replicaCount: 2
+      service:
+        type: ClusterIP
